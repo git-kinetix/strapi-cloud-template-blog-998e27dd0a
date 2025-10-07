@@ -26,9 +26,9 @@
     },
     "mocap_categories": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::mocap-category.mocap-category",
-      "mappedBy": "mocap"
+      "mappedBy": "mocaps"
     }
   }
 }

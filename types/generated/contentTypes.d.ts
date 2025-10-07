@@ -455,7 +455,7 @@ export interface ApiMocapCategoryMocapCategory
       'api::mocap-category.mocap-category'
     > &
       Schema.Attribute.Private;
-    mocap: Schema.Attribute.Relation<'manyToOne', 'api::mocap.mocap'>;
+    mocaps: Schema.Attribute.Relation<'manyToMany', 'api::mocap.mocap'>;
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
@@ -482,7 +482,7 @@ export interface ApiMocapMocap extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::mocap.mocap'> &
       Schema.Attribute.Private;
     mocap_categories: Schema.Attribute.Relation<
-      'oneToMany',
+      'manyToMany',
       'api::mocap-category.mocap-category'
     >;
     name: Schema.Attribute.String;

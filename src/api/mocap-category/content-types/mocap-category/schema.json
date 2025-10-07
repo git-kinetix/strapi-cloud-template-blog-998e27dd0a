@@ -17,9 +17,9 @@
     "description": {
       "type": "string"
     },
-    "mocap": {
+    "mocaps": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::mocap.mocap",
       "inversedBy": "mocap_categories"
     }
