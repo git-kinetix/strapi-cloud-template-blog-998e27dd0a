@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_items",
+  "info": {
+    "singularName": "gallery-item",
+    "pluralName": "gallery-items",
+    "displayName": "GalleryItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "camera_preset": {
+      "type": "enumeration",
+      "enum": [
+        "static",
+        "handheld_static",
+        "dolly_forward",
+        "dolly_back",
+        "dolly_up",
+        "dolly_down",
+        "dolly_left",
+        "dolly_right",
+        "dolly_zoom_in",
+        "dolly_zoom_out",
+        "handheld_dolly",
+        "zoom_in",
+        "zoom_out",
+        "rapid_zoom_in",
+        "rapid_zoom_out",
+        "handheld_zoom",
+        "arc_left_30",
+        "arc_right_30",
+        "arc_left_45",
+        "arc_right_45",
+        "aerial_pull_out",
+        "dynamic_zoom_swing"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mocap": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "first_frame": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "prompt": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mocaps",
+  "info": {
+    "singularName": "mocap",
+    "pluralName": "mocaps",
+    "displayName": "mocap"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mocap_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mocap-category.mocap-category",
+      "mappedBy": "mocap"
+    }
+  }
+}
