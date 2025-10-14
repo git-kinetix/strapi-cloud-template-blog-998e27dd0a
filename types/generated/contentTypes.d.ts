@@ -430,6 +430,16 @@ export interface ApiGalleryItemGalleryItem extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     video: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    video_320p: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    video_540p: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    video_720p: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
   };
 }
 
