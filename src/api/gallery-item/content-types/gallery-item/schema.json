@@ -103,6 +103,16 @@
         "videos",
         "audios"
       ]
+    },
+    "video_1k": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
